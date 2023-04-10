@@ -1,4 +1,4 @@
-from .models import Cat
+from .models import Alligator, Cat, Dog
 from django.views.generic import CreateView, UpdateView, DetailView, ListView
 from django.shortcuts import render
 

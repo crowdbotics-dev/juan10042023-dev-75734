@@ -14,3 +14,6 @@ class Alligator(models.Model):
     'Generated Model'
     name = models.CharField(max_length=256,)
     age = models.BigIntegerField()
+class Turtle(models.Model):
+    'Generated Model'
+    age = models.BigIntegerField()
