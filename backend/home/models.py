@@ -10,3 +10,7 @@ class Cat(models.Model):
 class Dog(models.Model):
     name = models.CharField(max_length=256,)
     age = models.BigIntegerField()
+class Alligator(models.Model):
+    'Generated Model'
+    name = models.CharField(max_length=256,)
+    age = models.BigIntegerField()

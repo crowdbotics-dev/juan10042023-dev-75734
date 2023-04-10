@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from home.models import Cat
-from .serializers import CatSerializer
+from home.models import Alligator,Cat
+from .serializers import AlligatorSerializer,CatSerializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -37,3 +37,8 @@ class CatViewSet(viewsets.ModelViewSet):
     serializer_class = CatSerializer
     authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
     queryset = Cat.objects.all()
+
+class AlligatorViewSet(viewsets.ModelViewSet):
+    serializer_class = AlligatorSerializer
+    authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
+    queryset = Alligator.objects.all()

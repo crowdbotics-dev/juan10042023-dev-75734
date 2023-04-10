@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from home.models import Cat
+from home.models import Alligator,Cat
 from django.http import HttpRequest
 from django.utils.translation import ugettext_lazy as _
 from allauth.account import app_settings as allauth_settings
@@ -80,4 +80,10 @@ class CatSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Cat
+        fields = "__all__"
+
+class AlligatorSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Alligator
         fields = "__all__"
